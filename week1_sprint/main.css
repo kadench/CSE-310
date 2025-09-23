@@ -1,0 +1,61 @@
+:root {
+    --h1-font-size: 18px;
+    --h3-font-size: 16px;
+    --p-font-size: 14px;
+    --light-gray: #243a4636;
+    --dark-gray: #252525;
+    --blue: #44799e;
+    --notice-blue: #188c90;
+    --heading-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: var(--p-font-size);
+    background-color: #1f1f1f;
+    
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-self: center;   
+}
+
+#mainLogo {
+    padding: 5%;
+}
+
+input[name="search-box"] {
+    width: 70%;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+input[type="button"] {
+background-color: #188c90;
+border-color: #188c90;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--dark-gray);
+}
+
+.copyright {
+    color: white;
+    padding: 1.5%;
+}

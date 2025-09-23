@@ -1,0 +1,1 @@
+const spotifyLink = document.querySelector
