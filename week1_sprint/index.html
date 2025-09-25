@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
     <link rel="stylesheet" href="main.css">
     <title>Music From Movie Finder</title>
-    <script src="catalog.js" defer=""></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main-content">
@@ -27,13 +27,28 @@
                 <a href="index.html"><img id="mainLogo" src="images/favicon.svg" alt="main logo to home link"></a>
             </nav>
         </header>
-        <form action="submit" id="address-form">
+        <h1 id="title">Got a Score in Mind?</h1>
+        <p id="tagline">Find out what movie it's from!</p>
+        <form action="#" id="addressForm">
             <div class="search-bar">
-                <input type="text" name="search-box" placeholder="Paste Spotify share link here">
-                <input type="button" value="GO">
+                <input id="addressLink" type="text" name="search-box" placeholder="   Paste ANY streaming service share link here!">
+                <input id="findMovie" type="button" value="GO">
             </div>
         </form>
-        <p class="info">This site uses the Odesli, iTunes, and MusicBrainz public API, but is not affiliated with any of these services.</p>
+        <p class="info">This site uses the Odesli's Songlink, iTunes, and MusicBrainz public API, but is not affiliated with any of these services.</p>
+    </div>
+    <div id="identifiedMovie">
+        <section id="trailer"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TQhRqtt-Fpo?si=D-4CCUzKOaTilSlr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></section>
+        <section id="movieInfo">
+            <h2 id="movieTitle">The Polar Express</h2>
+            <h3 class="movie-seporator">--------------------------------------------------</h3>
+            <p id="movieInfo">Robert Zemeckis · 2004 · PG · 1h 40m</p>
+        </section>
+        <section id="feedback">
+            <h2>Oops!</h1>
+            <p>I see you've entered a <strong>Spotify</strong> link.</p>
+            <p>Unfortunately, I cannot find enough metadata to give you the correct movie! Try another score.</p>
+        </section>
     </div>
         <footer> 
             <p class="copyright">© Kaden Hansen 2025. All Rights Reserved</p>
