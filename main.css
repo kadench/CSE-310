@@ -1,0 +1,242 @@
+:root {
+    --h1-font-size: 18px;
+    --h3-font-size: 16px;
+    --p-font-size: 14px;
+    --light-gray: #243a4636;
+    --dark-blue: #2a6caa;
+    --blue: #44799e;
+    --notice-blue: #188c90;
+    --heading-color: #fff;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: var(--dark-blue);
+    margin: 1rem 1rem 0rem 1rem;
+    border: 3px solid;
+    border-bottom: 2px solid;
+    border-radius: 20px 20px 0 0;
+}
+
+h1.main-title {
+    color: var(--heading-color);
+    text-align: center;
+    font-size: var(--h1-font-size);
+    padding: 1rem;
+}
+
+#home-link {
+    color: black;
+    transition: all 0.2s ease-out;
+}
+
+#home-link:hover {
+    text-decoration: none;
+}
+
+.table-header {
+    color: var(--heading-color);
+    padding: .2rem;
+    background-color: var(--blue);
+    margin: 0 2rem 0 2rem;
+}
+
+.table-title-container {
+    display: flex;
+    margin: 0 1rem;
+    padding: 0;
+    background-color: var(--blue);
+    align-content: left;
+}
+
+.left-title {
+    width: 50%;
+    padding: 5px;
+    border-right: 1.5px solid black;
+    border-bottom: 1px solid black;
+    border-left: 3px solid black;
+    background-color: var(--blue);
+    text-align: center;
+}
+
+.right-title {
+    width: 50%;
+    padding: 5px;
+    border-right: 3px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1.5px solid black;
+    background-color: var(--blue);
+    text-align: center;
+}
+
+.table-title-text {
+    font-size: var(--p-font-size);
+    text-align: center;
+    overflow-wrap: break-word;
+    padding: 0;
+}
+
+.table-container {
+    display: block;
+    margin: 0 1rem;
+    width: calc(100% - 2rem);
+}
+
+.table-row {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+}
+
+.left-div, .right-div {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    width: 50%;
+}
+
+.table-content {
+    margin: 0;
+    padding: 5px;
+    font-size: var(--p-font-size);
+    background-color: white;
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    align-content: center;
+}
+
+.right-div > .table-content {
+    border-right: 3px solid;
+    border-left: 1px solid;
+}
+
+.left-div > .table-content {
+    border-left: 3px solid;
+    border-right: 1px solid;
+}
+
+.bottom-cell {
+    border-bottom: 3px solid;
+}
+
+.left-bottom-cell {
+    border-bottom-left-radius: 20px;
+}
+
+.right-bottom-cell {
+    border-bottom-right-radius: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: rgb(60, 94, 206);
+}
+
+.gray > a:link {
+    text-decoration: none;
+    color: #3451b2;
+}
+
+.gray > a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #367183;
+}
+
+a:hover {
+    color: #436d5c;
+    text-decoration: underline;
+}
+
+.gray {
+    background-color: var(--light-gray);
+}
+
+.complete::before {
+    font-weight: 550;
+    color: #008000;
+    content: "Complete";
+}
+
+.miss::before {
+    font-weight: 550;
+    color: #da0d0d; 
+    content: "Missing";
+}
+
+.help::before {
+    font-weight: 550;
+    color: #8831b4;
+    content: "Help Needed";
+}
+
+.progress::before {
+    font-weight: 550;
+    color: #e09916;
+    content: "In Progress";
+}
+
+.gray-complete::before {
+    font-weight: 550;
+    color: #008000;
+    content: "Complete";
+}
+
+.gray-miss::before {
+    font-weight: 550;
+    color: #be1a1a; 
+    content: "Missing";
+}
+
+.gray-progress::before {
+    font-weight: 550;
+    color: #a17750;
+    content: "In Progress";
+}
+
+.gray-help::before {
+    font-weight: 550;
+    color: #8526b4;
+    content: "Help Needed";
+}
+
+.footnote {
+    margin: .3rem 1rem;
+    font-size: var(--p-font-size);
+    color: #0D0D0D;
+}
+
+.footnote a {
+    color: #55197A;
+    text-decoration: underline;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: var(--dark-blue);
+}
+
+.bottom-footer {
+    padding: 15px;
+    color: white;
+}
+
+@media screen and (max-width: 425px) {
+    .footnote {
+        text-align: center;
+    }
+}

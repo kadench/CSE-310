@@ -1,0 +1,58 @@
+/* Define all variables for file use. */
+:root {
+    --notice-blue: #0c6ae6;
+    --h1-font-size: 58px;
+    --p-font-size: 38px;
+}
+
+/* Delete all uneeded space and set the font family */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--notice-blue);
+    text-align: center;
+
+}
+
+/* Make sure the body element stretches through the whole page */
+body {
+    width: 100%;
+}
+
+/* Style the 404 Error title */
+.error-title {
+    margin: 10rem 10rem .2rem 10rem;
+    padding-top: 1rem;
+    font-size: var(--h1-font-size);
+    font-weight: 500;
+}
+
+/* Style the 404 Error paragraph tag */
+.error-message {
+    margin: 1em;
+    padding-top: 1rem;
+    font-size: var(--p-font-size);
+    font-weight: 0;
+}
+
+/* Style homepage link */
+.homepage-link {
+    margin: 11em;
+    text-decoration: none;
+}
+
+.homepage-link:hover {
+    color: #197569;
+    text-decoration: underline;
+    transition: text-decoration 1s ease-in;
+}
+
+/* Putting the footer at the bottom of the page. */
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
